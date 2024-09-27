@@ -1,0 +1,250 @@
+body {
+  background: linear-gradient(135deg, #ff4500, #000000); /* Diagonal dark orange to black gradient */
+  color: #e0e0e0; /* Light text for dark theme */
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif; /* Gothic and classic font */
+  padding-block-start: 4rem;
+}
+
+/* main container for data display excluding the header section */
+.container__main {
+  padding-inline: 2.5%;
+}
+
+/* The book title and author section  */
+.mainhead{
+  font-family: 'Times New Roman';
+  font-size: 3rem; /* Adjust the size as needed */
+  color: #ffbc04; /* Color of the heading */
+  text-align: center; /* Center the heading */
+}
+.intro, .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+/* Introductory hard coded summary of what the app is */
+.intro .summary {
+  max-width: 40em;
+  line-height: 1.8em;
+  padding-inline: 1rem;
+  text-align: left;
+  color: #e5e5e5; /* Light color for readability */
+}
+
+/* handle anchor tags in the introductory part */
+.open__library {
+  font-weight: bold;
+  color: #ffcc00; /* Slightly golden hue for links */
+}
+
+.open__library:hover {
+  color: #ffa500; /* Orange hue on hover */
+}
+
+/* add new book */
+.add__book {
+  background-color: #f9e004; /* Darker button background */
+ 
+  margin: 0 auto; /* Center the button */
+    display: block; /* Make the button a block element */
+    text-align: center; /* Center text inside the button */
+}
+
+.add__book:hover {
+  background-color: #b3f0f3; /* Lighter on hover */
+}
+
+.add__book_text {
+  text-decoration: none;
+}
+
+/* book title and author */
+.title__author {
+  font-family: "Old Standard TT", serif; /* Another classic and serif style */
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: #bbbbbb; /* Softer light color for better readability */
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+}
+
+/* rating and date read */
+.rating_and_dated {
+  color: #bbbbbb;
+  line-height: 1.7rem;
+  font-style: italic;
+  display: inline;
+  margin-block-end: 1rem;
+}
+
+/* rating text */
+.recommendation {
+  font-weight: bold;
+}
+
+/* book cover image */
+.cover__img {
+  display: block;
+  background-color: #444444; /* Dark background for images */
+  float: inline-start;
+  border: 2px solid #ff4500; /* Subtle orange border */
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+
+/* book details - description ... */
+.book__details {
+  display: block;
+  margin-block-end: 0.2rem;
+  line-height: 1.6rem;
+}
+
+/* delete form and edit button section */
+.delete_form_edit_btn__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0 4rem;
+}
+
+/* general button */
+.btn {
+  height: 2rem;
+  width: 6rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  border-radius: 0.8rem;
+  color: #FFF;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+.edit__btn {
+  background-color: #556B2F; /* Dark olive green */
+}
+
+.edit__btn:hover {
+  background-color: #8FBC8F; /* Softer light green */
+}
+
+.delete__btn {
+  background-color: #8B0000; /* Dark red */
+}
+
+.delete__btn:hover {
+  background-color: #FF4500; /* Bright red on hover */
+}
+
+/* bookList contents display and forms */
+.form__box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* edit form */
+.form__input {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 44rem;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  background-color: #333333; /* Dark input background */
+  padding-inline: 2rem;
+  border-radius: 1rem;
+}
+
+/* form part one and two */
+.form__part1, .form__part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2rem;
+}
+
+.form__input input, .form__input textarea {
+  margin-block: 0.5rem;
+  height: 2rem;
+  width: 16rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  background-color: #333333;
+  color: #e5e5e5; /* Light text for input */
+  border: 1px solid #555555; /* Subtle border */
+}
+
+.form__input textarea {
+  height: 8.5rem;
+  text-align: left;
+}
+
+.edit__textarea textarea {
+  height: 12.5rem;
+}
+
+/* labels for edit form elements */
+.form__input label {
+  margin-block-end: -0.5rem;
+}
+
+/* cancel, edit, and add buttons */
+.cancel-btn, .add-btn, .btn__edit {
+  margin: 2rem 1rem;
+  font-weight: bold;
+}
+
+.btn__edit {
+  background-color: limegreen;
+}
+
+.btn__edit:hover {
+  background-color: seagreen;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-block: auto 4rem;
+  color: #999999; /* Lighter gray for footer text */
+}
+
+@media screen and (min-width: 360px) {
+  .cover__img {
+    margin-right: 2rem;
+  }
+
+  .rating_and_dated {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__main {
+    padding-inline: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.1rem; /* Slightly larger font size */
+  }
+
+  .container__main {
+    padding-inline: 22%;
+  }
+}
