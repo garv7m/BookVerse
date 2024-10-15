@@ -5,6 +5,10 @@ Also, the book cover will be fetched from Open Library website if it is availabl
 -Server side: Nodejs, Expressjs<br>
 -Database: Postgres
 
+## Screenshots:
+![Screenshot (48)](https://github.com/user-attachments/assets/4ec72263-a164-4fbe-b74c-848592b00b98)
+
+
 ## Installation Instructions 
 -Firstly, install __PostgreSql server__ locally on your PC. Download it from **[PostgreSql download link](https://www.postgresql.org/download/)**. <br>
 -Follow instructions from the website to install it and set up your database.<br>
